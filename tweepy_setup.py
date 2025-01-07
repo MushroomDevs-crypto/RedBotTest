@@ -15,7 +15,10 @@ auth = tweepy.OAuth1UserHandler(
 # Criando a instância da API
 api = tweepy.API(auth)
 
-# Criando um tweet
-api.update_status("Hello World")
+# Criando a instância do cliente para a API v2
+client = tweepy.Client(bearer_token=os.getenv("BEARER_TOKEN"))
+
+# Criando um tweet usando a API v2
+client.create_tweet(text="Hello World")
 
 
