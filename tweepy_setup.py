@@ -1,17 +1,13 @@
 import tweepy
+import os
 
-# Credentials (Bearer Token)
-api_key = "YOUR_API_KEY"
-api_secret = "YOUR_API_SECRET"
-access_token = "YOUR_ACCESS_TOKEN"
-access_token_secret = "YOUR_ACCESS_TOKEN_SECRET"
-bearer_token = "YOUR_BEARER_TOKEN"
+# Obtendo o Bearer Token da variável de ambiente
+bearer_token = os.getenv("BEARER_TOKEN")
 
-
-# Conectando à API v2 do Twitter
+# Conectando à API v2
 client = tweepy.Client(bearer_token)
 
-# Criando um tweet usando a API v2
+# Criando um tweet
 client.create_tweet(text="Hello World")
 
 
