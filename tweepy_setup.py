@@ -1,7 +1,12 @@
 import tweepy
 
 # Credentials (Bearer Token)
-bearer_token = "AAAAAAAAAAAAAAAAAAAAAIRqxAEAAAAANQXeQNyotFUX7TtmsAE5Lz0wDBI%3DF4p6LvgU2TeKQaAiPSsvazM81QASeh8gLQRo1lvbzOWEfgRu65"
+api_key = "YOUR_API_KEY"
+api_secret = "YOUR_API_SECRET"
+access_token = "YOUR_ACCESS_TOKEN"
+access_token_secret = "YOUR_ACCESS_TOKEN_SECRET"
+bearer_token = "YOUR_BEARER_TOKEN"
+
 
 # Conectando à API v2 do Twitter
 client = tweepy.Client(bearer_token)
